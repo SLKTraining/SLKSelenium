@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import java.io.File;
 
 import static org.junit.Assert.assertEquals;
 
@@ -17,6 +18,8 @@ public class MyExampleWebDriverTest {
 
     @Test
     public void visitSeleniumTestPage(){
+		File file = new File("D:/Projects/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 
         WebDriver driver = Driver.get();
 
