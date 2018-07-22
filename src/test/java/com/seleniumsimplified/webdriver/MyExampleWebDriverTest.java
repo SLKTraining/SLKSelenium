@@ -18,7 +18,7 @@ public class MyExampleWebDriverTest {
 
     @Test
     public void visitSeleniumTestPage(){
-		File file = new File("C:/Downloads/chromedriver.exe");
+		File file = new File("C:/Users/Abhishek/Downloads/chromedriver.exe");
 		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 
         WebDriver driver = Driver.get();
